@@ -1,5 +1,6 @@
 from leitorarquivo import LeitorArquivo
-
+import numpy as np
+import matplotlib.pyplot as plt
 import os
 
 def main():
@@ -7,6 +8,8 @@ def main():
     valores = leitor.getValores()
     os.system("cls")
     print(valores)
+    plt.plot(valores)
+    plt.show()
 
 
 main()
